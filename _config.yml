@@ -1,0 +1,27 @@
+title: "Victor Ramirez — Research Notes"
+description: "Short articles and resources on Prompt Eng."
+url: "https://vramirezve.github.io"     # ← replace with your GitHub username
+baseurl: "/Test-site"                      # ← replace with your repo name, e.g. /victor-site
+
+theme: minima
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Minima nav uses header_pages; list pages you want in the top menu:
+header_pages:
+  - about.md
+
+# Sensible defaults
+permalink: /:categories/:title/
+defaults:
+  - scope: { path: "", type: "pages" }
+    values:
+      layout: page
+      image: "/REPO/assets/og/og.png"
+      lang: "en"
+  - scope: { path: "", type: "posts" }
+    values:
+      layout: post
+      image: "/REPO/assets/og/og.png"
