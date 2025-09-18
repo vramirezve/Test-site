@@ -1,0 +1,12 @@
+{% if page.url == site.baseurl | default: "/" %}
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Victor Ramirez",
+    "url":"{{ site.url }}{{ site.baseurl }}/",
+    "jobTitle":"Prompt Eng",
+    "sameAs":["https://www.linkedin.com/in/victor-ramirez-vramirezve/"]
+  }
+  </script>
+{% endif %}
